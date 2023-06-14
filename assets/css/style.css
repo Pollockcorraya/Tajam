@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;700;900&display=swap');
 
 * {
     margin: 0;
@@ -36,9 +36,8 @@ header {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 100vh;
    position: relative;
-    height: 670px;
+   height: 670px;
 }
 header::before {
     content: "";
@@ -115,4 +114,47 @@ header::before {
 }
 .about-btn {
     margin-top: 30px;
+}
+/* Story CSS */
+#video {
+    background-image: url(../image/video/video.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ }
+#video::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgb(35, 13, 87, 0.85)
+}
+.video {
+    position: relative;
+    z-index: 111;
+}
+.play-button {  
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.play-button img {
+    width: 70%;
+  
+
+}
+.video p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 45px;
 }
